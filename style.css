@@ -1,3 +1,18 @@
+/*
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.thumbnail{
+    flex: 1 1 200px;
+    background-color: blue;
+    height: 250px;
+}
+.content{
+    flex: 2 1 300px;
+}
+*/
 body {
     background: #F3F5FC;
     font-family: "Inter", sans-serif;
@@ -14,11 +29,6 @@ body {
     gap: 40px;
     
 }
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-}
 .input-mensaje{
     width: 577px;
     height: 460px;
@@ -34,7 +44,8 @@ body {
     background: none;
     border: none;
     color: #0A3871;   
-    outline: none;  
+    outline: none;
+    resize: none;
     
 }
 .input-mensaje::placeholder{
@@ -42,11 +53,60 @@ body {
 }
 .rectangulo{
     width: 400px;
-    height: 670px;
+    height: 90%;
     position: absolute;
-    top: 40px;
+    top: 5%;
     left: 1000px;
     border-radius: 32px;
     background: white;
+    
+    
+}
+.muneco{
+    width: 80%;
+    height: 43%;
+    margin: 0 40px;
+    position: absolute;
+    top: 18%;    
+}
+.mensajes-iniciales{
+    text-align: center;
+    width: 80%;
+    height: 17%;
+    position: absolute;
+    top: 63%;
+    margin: 0 10%;
+}
+.mensajes-iniciales h2{
 
+    font-weight: 700;    
+    font-size: 24px;
+    color: #343A40;
+    line-height: 28.8px;
+    margin: 1% 0;
+}
+.mensajes-iniciales p{
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;    
+    line-height: 24px;
+}
+.contenido-rectangulo{
+  
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 24px;
+    color: #495057;        
+    line-height: 36px;  
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: none;
+    outline: none;
+    resize: none;
+       
 }
