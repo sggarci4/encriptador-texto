@@ -2,3 +2,81 @@
 /.DS_Store
 DS_Store
 prueba.html
+
+
+<aside class="texto-encriptado">
+            <div class="rectangulo">            
+                
+                <textarea name="contenido-encriptacion" id="cont-encrip" cols="30" rows="10" class="contenido-rectangulo"></textarea>
+                <div class="mensajes-iniciales">
+                    <img src="imagenes/muneco.png" alt="muneco ilustrativo">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>            
+            </div>                            
+        </aside>
+
+----
+        .rectangulo{
+    width: 400px;
+    height: 90%;
+    position: absolute;
+    top: 5%;    
+    border-radius: 32px;
+    background: white;
+    
+    
+}
+/*
+.muneco{
+    width: 80%;
+    height: 43%;
+    margin: 0 40px;
+    position: absolute;
+    top: 18%;    
+} */
+.mensajes-iniciales{
+    text-align: center;
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    margin: 0 10%;
+}
+.mensajes-iniciales h2{
+
+    font-weight: 700;    
+    font-size: 24px;
+    color: #343A40;
+    line-height: 28.8px;
+    margin: 1% 0;
+}
+.mensajes-iniciales p{
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;    
+    line-height: 24px;
+}
+.contenido-rectangulo{
+  
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 24px;
+    color: #495057;        
+    line-height: 36px;  
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: red;
+       
+}
+.contenido-rectangulo:active {
+    visibility: hidden;
+}

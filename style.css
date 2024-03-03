@@ -19,8 +19,15 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-variation-settings: "slnt" 0;
- 
+    font-variation-settings: "slnt" 0; 
+}
+header{
+    width: 65%;
+    height: 170px;
+    float: left;
+}
+.encabezado{
+height: 170px;
 }
 .logo{
     position: absolute;    
@@ -29,53 +36,57 @@ body {
     gap: 40px;
     
 }
-.input-mensaje{
-    width: 577px;
-    height: 460px;
-    position: absolute;
-    top: 168px;
-    left: 240px;
-    font-size: 32px;    
+.aside-texto-encriptado{
+    width: 35%;
+    height: 779px;
+    float: right;
+}
+.rectangulo{
+    width: 400px; /* width: 79.366%; */
+    height: 90%;
+    position: relative; 
+    top: 5%;
+    bottom: 5%;
+    left: 12.908%;
+    right: 7.726%;   
+    border-radius: 32px;
+    background: white;        
+}
+.contenido-rectangulo{
+  
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "slnt" 0;
-    background: none;
+    font-size: 24px;
+    color: #495057;        
+    line-height: 36px;  
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: calc(10% - 2px);
+    right: calc(10% - 2px);
+    top: calc(10% - 2px);
+    bottom: calc(10% - 2px);
     border: none;
-    color: #0A3871;   
     outline: none;
     resize: none;
-    
-}
-.input-mensaje::placeholder{
-    color: #0A3871;
-}
-.rectangulo{
-    width: 400px;
-    height: 90%;
-    position: absolute;
-    top: 5%;
-    left: 1000px;
-    border-radius: 32px;
-    background: white;
-    
-    
-}
-.muneco{
-    width: 80%;
-    height: 43%;
-    margin: 0 40px;
-    position: absolute;
-    top: 18%;    
+    background: lightblue;
+       
 }
 .mensajes-iniciales{
     text-align: center;
     width: 80%;
-    height: 17%;
+    height: 60%;
     position: absolute;
-    top: 63%;
-    margin: 0 10%;
+    top: 20%;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+}
+.mensajes-iniciales img{
+    width: 100%;
 }
 .mensajes-iniciales h2{
 
@@ -92,21 +103,93 @@ body {
     color: #495057;    
     line-height: 24px;
 }
-.contenido-rectangulo{
-  
+.button-copiar, .elementos-botones button {    
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "slnt" 0;
-    font-size: 24px;
-    color: #495057;        
-    line-height: 36px;  
-    width: 80%;
-    height: 80%;
-    margin: 10%;
+    font-size: 16px;
+    line-height: 19.36px;            
+    padding: 24px;
+    border: 1px solid #0A3871;    
+    border-radius: 24px;
+    gap: 8px;
+}
+.button-copiar{
+    background: #F3F5FC;
+    color: #0A3871;
+    width: 84%;
+    height: 10%;
+    position: relative;
+    top: 5.72%;
+    bottom: 4.28%;
+    left: 8%;
+    right: 8%;
+}
+.caja-principal{
+    width: 65%;
+    height: 460px;
+    clear: left;
+    
+}
+.input-mensaje{
+    width: calc(74% - 4px);
+    height: 460px;
+    margin-left: 26%;
+    font-size: 32px;    
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    background: none;
     border: none;
+    color: #0A3871;   
     outline: none;
     resize: none;
-       
+    
+}
+.input-mensaje::placeholder{
+    color: #0A3871;
+}
+
+.botones{
+    width: 65%;
+    height: 149px;
+}
+.elementos-botones{
+    width: 74%;
+    margin-left: 26%;
+}
+.container{
+    display: flex;
+    align-items: center;    
+    height: 18px;
+    
+}
+.elementos-botones svg{
+    color: rgba(73, 80, 87, 0.8);
+}
+.elementos-botones p{
+    width: 228px;
+    height: 18px;
+    color: rgba(73, 80, 87, 0.8);
+    margin-left: 5px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    font-size: 12px;
+    line-height: 18px;
+
+}
+.elementos-botones button{
+    color: red;
+    /*position*/
+}
+
+.contenido-rectangulo:active {
+    
 }

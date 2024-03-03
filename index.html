@@ -15,21 +15,36 @@
         </div>
     </header>
     <main>        
-        <textarea id="mensaje" cols="60" rows="10" class="input-mensaje" required placeholder="Ingrese el texto aqui" wrap="hard"></textarea>
-
-        <section class="texto-encriptado">
+        <aside class="aside-texto-encriptado">
             <div class="rectangulo">            
-                <div class="muneco">
-                    <img src="imagenes/muneco.png" alt="muneco ilustrativo">
-                </div>
+                
+                <textarea name="contenido-encriptacion" id="cont-encrip" cols="30" rows="10" class="contenido-rectangulo"></textarea>
                 <div class="mensajes-iniciales">
-                    <h2>Ningun mensaje fue encontrado</h2>
+                    <img src="imagenes/muneco.png" alt="muneco ilustrativo">
+                    <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>            
-                <textarea name="contenido-encriptacion" id="cont-encrip" cols="30" rows="10" class="contenido-rectangulo"></textarea>
-            </div>                            
-
+                <button class="button-copiar">Copiar</button>
+            </div>
+        </aside>
+        <section class="caja-principal"> 
+            <textarea id="mensaje" cols="60" rows="10" class="input-mensaje" required placeholder="Ingrese el texto aqui" wrap="hard"></textarea>
         </section>
+        
+        <section class="botones">
+            <div class="elementos-botones">
+                
+                <div class="container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4m.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2"/>
+                      </svg>
+                    <p> Solo letra minúsculas y sin acentos</p>
+                </div>
+                <button class="button-encriptar">Encriptar</button>
+                <button class="button-desencriptar">Desencriptar</button> 
+
+            </div>                        
+        </section>        
     </main>
     <footer>
 
