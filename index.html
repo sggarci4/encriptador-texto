@@ -18,17 +18,17 @@
         <aside class="aside-texto-encriptado">
             <div class="rectangulo">            
                 
-                <textarea name="contenido-encriptacion" id="cont-encrip" cols="30" rows="10" class="contenido-rectangulo"></textarea>
-                <div class="mensajes-iniciales">
+                <textarea name="contenido-encriptacion" id="cont-encrip" cols="30" rows="10" class="contenido-rectangulo" readonly="readonly"></textarea>
+                <div class="mensajes-iniciales" id="elementos-mensajes">
                     <img src="imagenes/muneco.png" alt="muneco ilustrativo">
                     <h2>Ningún mensaje fue encontrado</h2>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                 </div>            
-                <button class="button-copiar">Copiar</button>
+                <button onclick="copiarTexto();" class="button-copiar" id="btn-copiar" >Copiar</button>
             </div>
         </aside>
         <section class="caja-principal"> 
-            <textarea id="mensaje" cols="60" rows="10" class="input-mensaje" required placeholder="Ingrese el texto aqui" wrap="hard"></textarea>
+            <textarea id="mensaje" cols="60" rows="10" class="input-mensaje" required placeholder="Ingrese el texto aqui"></textarea>
         </section>
         
         <section class="botones">
@@ -40,8 +40,8 @@
                       </svg>
                     <p> Solo letra minúsculas y sin acentos</p>
                 </div>
-                <button class="button-encriptar">Encriptar</button>
-                <button class="button-desencriptar">Desencriptar</button> 
+                <button onclick="encriptarTexto();" class="button-encriptar">Encriptar</button>
+                <button onclick="desencriptarTexto();" class="button-desencriptar">Desencriptar</button> 
 
             </div>                        
         </section>        
@@ -49,5 +49,6 @@
     <footer>
 
     </footer>
+    <script src="app.js" defer></script>
 </body>
 </html

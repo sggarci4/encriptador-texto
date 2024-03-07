@@ -72,7 +72,7 @@ height: 170px;
     border: none;
     outline: none;
     resize: none;
-    background: lightblue;
+    background: transparent;
        
 }
 .mensajes-iniciales{
@@ -126,16 +126,17 @@ height: 170px;
     bottom: 4.28%;
     left: 8%;
     right: 8%;
+    visibility: hidden;
 }
 .caja-principal{
     width: 65%;
-    height: 460px;
+    height: 445px;
     clear: left;
     
 }
 .input-mensaje{
     width: calc(74% - 4px);
-    height: 460px;
+    height: 445px;
     margin-left: 26%;
     font-size: 32px;    
     font-family: "Inter", sans-serif;
@@ -166,6 +167,7 @@ height: 170px;
     display: flex;
     align-items: center;    
     height: 18px;
+    margin-bottom: 15px;
     
 }
 .elementos-botones svg{
@@ -185,11 +187,21 @@ height: 170px;
     line-height: 18px;
 
 }
-.elementos-botones button{
-    color: red;
+.elementos-botones button{    
+    width: 48%;
+    height: 70.109px;
     /*position*/
 }
+.button-encriptar{
+    background: rgba(10, 56, 113, 1);
+    color: rgba(255, 255, 255, 1);
 
-.contenido-rectangulo:active {
-    
+}
+.button-desencriptar{
+    background: transparent;
+    color: #0A3871;
+    float: right;
+}
+@media screen and (max-width: 1024px) {
+   
 }
