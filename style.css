@@ -1,17 +1,5 @@
 /*
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 300px;
-}
-.thumbnail{
-    flex: 1 1 200px;
-    background-color: blue;
-    height: 250px;
-}
-.content{
-    flex: 2 1 300px;
-}
+version desktop
 */
 body {
     background: #F3F5FC;
@@ -20,7 +8,9 @@ body {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "slnt" 0; 
+    
 }
+/* header html */
 header{
     width: 65%;
     height: 170px;
@@ -36,6 +26,7 @@ height: 170px;
     gap: 40px;
     
 }
+/* aside aside-texto-encriptado */
 .aside-texto-encriptado{
     width: 35%;
     height: 779px;
@@ -126,8 +117,9 @@ height: 170px;
     bottom: 4.28%;
     left: 8%;
     right: 8%;
-    visibility: hidden;
+    display: none;
 }
+/* section caja-principal html */
 .caja-principal{
     width: 65%;
     height: 445px;
@@ -154,7 +146,7 @@ height: 170px;
 .input-mensaje::placeholder{
     color: #0A3871;
 }
-
+/* section botones html */
 .botones{
     width: 65%;
     height: 149px;
@@ -202,6 +194,133 @@ height: 170px;
     color: #0A3871;
     float: right;
 }
-@media screen and (max-width: 1024px) {
-   
+/*
+version tablet
+*/
+@media screen and (max-width: 1024px) {   
+    /* header html */
+    header{
+        float: none;
+        width: 100%;
+        height: 240px;
+    }
+    .logo{
+        top: 76px;
+        left: 40px
+    }
+    .logo-responsive{
+        content: url(imagenes/logo-tablet.png);
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* aside aside-texto-encriptado */
+    .aside-texto-encriptado{
+        float: none;
+        width: 100%;
+        height: auto;
+        order: 3;
+        margin-bottom: 40px        
+    }
+    .rectangulo{
+        margin: 0 40px;
+        width: calc(100% - 80px);
+        height: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .contenido-rectangulo{
+        width: 90%;
+        height: 87px;
+        margin: 20px 0;
+        left: calc(5% - 2px);
+        right: calc(5% - 2px);
+    }
+    .muneco-responsive{
+        display: none;
+    }
+    .mensajes-iniciales h2{
+        margin: 2% 0;
+    }
+    .button-copiar{
+        width: 90%;
+        right: 5%;
+        left: 5%;
+        margin-bottom: 20px;
+    }
+    /* section caja-principal html */
+    .caja-principal {
+        float: none; /* Elimina el float en dispositivos más pequeños */
+        order: 1; /* Cambia el orden del aside */
+        width: 100%; /* Ajusta el ancho si es necesario */
+        clear: none;
+    }
+    .input-mensaje{
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    }
+    /* section botones html */
+    .botones {
+        order: 2; /* Cambia el orden de las secciones */
+        float: none; /* Elimina el float en dispositivos más pequeños */
+        width: 100%; /* Ajusta el ancho si es necesario */
+    }
+    .elementos-botones{
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    }
+}
+/*
+version mobile
+*/
+@media screen and (max-width: 480px) {
+    /* header html */
+    header{
+        height: 96px;
+    }
+    .encabezado{
+        height: 96px;
+    }
+    .logo{
+        top: 24px;
+        left: 16px
+    }
+    .logo-responsive{
+        content: url(imagenes/logo-cel.png);
+    }
+    /* aside aside-texto-encriptado */
+    .rectangulo{
+        width: calc(100% - 32px);
+        margin: 0 16px;
+    }
+    .contenido-rectangulo{
+        height:  140px;
+    }
+    /* section caja-principal html */
+    .caja-principal{
+        height: auto;
+    }
+    .input-mensaje{
+        width: calc(100% - 36px);
+        margin: 56px 16px 0;
+        height: calc(355px - 62px);
+    }
+    /* section botones html */
+    .botones{
+        height: auto;
+    }
+    .elementos-botones{
+        width: calc(100% - 32px);
+        margin: 0 16px 68px;
+        display: inline-block;
+    }
+    .elementos-botones button{
+        width: 100%;
+    }
+    .button-encriptar{
+        margin-bottom: 25px;
+    }
 }
