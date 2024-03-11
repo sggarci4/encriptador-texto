@@ -194,6 +194,12 @@ height: 170px;
     color: #0A3871;
     float: right;
 }
+.rodapie{
+    padding: 20px;
+    text-align: center;
+    color: #495057;
+    font-size: 14px;
+}
 /*
 version tablet
 */
